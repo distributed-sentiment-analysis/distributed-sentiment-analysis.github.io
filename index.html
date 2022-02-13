@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>DDA</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap&subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600&display=swap&subset=latin-ext" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/fontawesome-all.css" rel="stylesheet">
+    <link href="css/swiper.css" rel="stylesheet">
+	<link href="css/magnific-popup.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+    <link rel="icon" href="images/favicon.png">
+</head>
+<body data-spy="scroll" data-target=".fixed-top">
+    
+	<div class="spinner-wrapper">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+    
+    <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
+        <a class="navbar-brand logo-text page-scroll" href="index.html">Dağıtık Duygu Analizi</a>
+        <!-- Mobile Menu Toggle Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-awesome fas fa-bars"></span>
+            <span class="navbar-toggler-awesome fas fa-times"></span>
+        </button>
+        <!-- end of mobile menu toggle button -->
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#header">Anasayfa <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#intro">Giriş</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#veri">Veri</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#model">Model</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#results">Sonuçlar</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="header-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="text-container">
+                            <h1><span id="js-rotating">Coğrafi, Etiketli, Twitter, Verileri, için, Dağıtık, Duygu, Analizi</span></h1>
+                            <p class="p-heading p-large">Coğrafi Etiketli Twitter Verileri için Dağıtık Duygu Analizi</p>
+                            <a class="btn-solid-lg page-scroll" href="#results">Sonuçlar</a>
+                        </div>
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of header-content -->
+    </header> <!-- end of header -->
+    <!-- end of header -->
+
+
+    <!-- Intro -->
+    <div id="intro" class="basic-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="text-container">
+                        <h2 style="text-align: center;">Coğrafi Etiketli Twitter Verileri için Dağıtık Duygu Analizi</h2>
+                        <p style="text-align: justify;">Sosyal medya üzerinde paylaşım miktarı hızla arttığı için araştırmacılara veri kaynağı olmaktadır. Aynı zamanda bu verinin incelenmesi ve analiz edilmesi hükümetler ve şirketler için önemlidir. Artan veri miktarıyla birlikte analiz hızlarının da artması gerekmektedir. Bu çalışmada büyük sosyal medya verisi üzerinde dağıtık yapay zeka tahmini yapılmıştır. Değerlendirme amacıyla verinin normal tahmin süresi ve dağıtık tahmin süresi karşılaştırılmıştır. Dağıtık tahmin için Spark kullanılmıştır. Veri olarak Twitter üzerinden il bazlı çekilen 16 milyon tweet kullanılmıştır. Dağıtık tahmin amacıyla, önceden eğitilmiş BERT modeline hassas ayar yapılarak duygu analiz modeli üretilmiştir. Yapay zeka tahmininin çıktısı olarak 81 il için duygu analizleri çıkarılmıştır.</p>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-7">
+                    <div class="image-container">
+                        <br>
+                        <img class="img-fluid marginauto" src="images/result_grafik.png" alt="alternative">
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-1 -->
+    <!-- end of intro -->
+
+    <!-- Veri -->
+    <div id="veri" class="cards-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="container">
+                        <h3>Veri Haritası</h3>
+                        <div class="col-lg-12">
+                            <div class="text-container">
+                                <img class="img-fluid" src="images/data_stats.png" alt="alternative">
+                            </div>
+                        </div>
+                    </div>
+
+                    <br><br><br>
+                    <div class="container">
+                        <h3>Şehir Bazlı Veri Sayıları</h3>
+
+                        <table class="center">
+                            <thead>
+                                    <tr>
+                                    <th>Şehir</th>
+                                    <th>Tweet Sayısı</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                    <td>Adana</td>
+                                    <td>754922</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Adıyaman</td>
+                                    <td>324034</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Afyonkarahisar</td>
+                                    <td>337301</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Ağrı</td>
+                                    <td>175573</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Aksaray</td>
+                                    <td>305239</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Amasya</td>
+                                    <td>250350</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Ankara</td>
+                                    <td>1054767</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Antalya</td>
+                                    <td>888494</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Ardahan</td>
+                                    <td>88390</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Artvin</td>
+                                    <td>155056</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Aydın</td>
+                                    <td>179194</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Balıkesir</td>
+                                    <td>174962</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Bartın</td>
+                                    <td>175027</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Batman</td>
+                                    <td>152618</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Bayburt</td>
+                                    <td>154106</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Bilecik</td>
+                                    <td>153412</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Bingöl</td>
+                                    <td>124883</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Bitlis</td>
+                                    <td>164351</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Bolu</td>
+                                    <td>176681</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Burdur</td>
+                                    <td>162017</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Bursa</td>
+                                    <td>188502</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Çanakkale</td>
+                                    <td>191517</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Çankırı</td>
+                                    <td>203021</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Çorum</td>
+                                    <td>159380</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Denizli</td>
+                                    <td>180426</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Diyarbakır</td>
+                                    <td>154140</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Düzce</td>
+                                    <td>171285</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Edirne</td>
+                                    <td>189467</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Elazığ</td>
+                                    <td>166779</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Erzincan</td>
+                                    <td>165682</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Erzurum</td>
+                                    <td>155764</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Eskişehir</td>
+                                    <td>196189</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Gaziantep</td>
+                                    <td>170970</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Giresun</td>
+                                    <td>164283</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Gümüşhane</td>
+                                    <td>118561</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Hakkari</td>
+                                    <td>118727</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Hatay</td>
+                                    <td>176004</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Iğdır</td>
+                                    <td>132836</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Isparta</td>
+                                    <td>156393</td>
+                                    </tr>
+                                    <tr>
+                                    <td>İstanbul</td>
+                                    <td>222137</td>
+                                    </tr>
+                                    <tr>
+                                    <td>İzmir</td>
+                                    <td>206820</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Kahramanmaraş</td>
+                                    <td>160972</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Karabük</td>
+                                    <td>165247</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Karaman</td>
+                                    <td>154118</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Kars</td>
+                                    <td>141955</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Kastamonu</td>
+                                    <td>202311</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Kayseri</td>
+                                    <td>179373</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Kırıkkale</td>
+                                    <td>157763</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Kırklareli</td>
+                                    <td>166062</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Kırşehir</td>
+                                    <td>145177</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Kilis</td>
+                                    <td>138311</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Kocaeli</td>
+                                    <td>184651</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Konya</td>
+                                    <td>169324</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Kütahya</td>
+                                    <td>159605</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Malatya</td>
+                                    <td>172500</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Manisa</td>
+                                    <td>178634</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Mardin</td>
+                                    <td>154912</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Mersin</td>
+                                    <td>172327</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Muğla</td>
+                                    <td>174975</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Muş</td>
+                                    <td>123740</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Nevşehir</td>
+                                    <td>168445</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Niğde</td>
+                                    <td>157988</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Ordu</td>
+                                    <td>175115</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Osmaniye</td>
+                                    <td>158027</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Rize</td>
+                                    <td>184130</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Sakarya</td>
+                                    <td>173399</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Samsun</td>
+                                    <td>187747</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Siirt</td>
+                                    <td>162174</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Sinop</td>
+                                    <td>155254</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Sivas</td>
+                                    <td>163256</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Şanlıurfa</td>
+                                    <td>165453</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Şırnak</td>
+                                    <td>152283</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Tekirdağ</td>
+                                    <td>176874</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Tokat</td>
+                                    <td>163623</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Trabzon</td>
+                                    <td>192104</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Tunceli</td>
+                                    <td>155569</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Uşak</td>
+                                    <td>150583</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Van</td>
+                                    <td>147715</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Yalova</td>
+                                    <td>178279</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Yozgat</td>
+                                    <td>147090</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Zonguldak</td>
+                                    <td>158710</td>
+                                    </tr>
+                                    <tr>
+                                    <td>--------------</td>
+                                    <td>-------------</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Toplam</td>
+                                    <td>16116035</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                   
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of cards-2 -->
+    <!-- end of veri -->
+
+
+    <!-- Model -->
+    <div id="model" class="cards-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="container">
+                        <h3>Duygu Analiz Modeli Detayları</h3>
+                        <table class="center">
+                            <tbody>
+                                <tr>
+                                <td>Model İsmi</td>
+                                <td>BERTurk</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                <td>Eğitim Verisi</td>
+                                <td>1800</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                <td>Test Verisi</td>
+                                <td>200</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                <td>Learning Rate</td>
+                                <td>5e-5</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                <td>Epoch</td>
+                                <td>3</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                <td>Batch Size</td>
+                                <td>6</td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr>
+                                <td>F1 Skoru</td>
+                                <td>93.7</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <br>
+                    <h2>Tüm veriyi ve duygu analiz modelini indirmek için <a style="color:red;" href="https://forms.gle/" target="_blank"><b>formu</b></a> doldurunuz.</h2>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of cards-2 -->
+    <!-- end of veri -->
+    
+
+    <!-- Results -->
+    <div id="results" class="cards-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Sonuçlar</h2>
+                    <p style="text-align: justify;">Sonuç olarak, metin verisi üzerinde yapay zeka tahmini yapabilmek amacıyla Türkiye'nin tüm illerinden büyük bir metin verisi oluşturulmuştur. Yapay zeka tahmini yapabilmek için, Türkçe duygu analiz modeli eğitilmiştir. Çekilen veriler duygu analizi modeli kullanılarak önce normal bir şekilde, ardından Spark kullanılarak dağıtık bir şekilde tahmin edilmiştir. Çıkan sonuca göre tüm veri üzerinde tahmin hızı 479 kat hızlandırılmıştır. Bununla birlikte dağıtma sayısına bağlı hızlanma sayısı incelenmiştir ve dağıtma sayısının oldukça önemli etkisi olduğu görülmüştür. Ayrıca duygu analizi sonuçları sayesinde Türkiye'deki tüm illerin mutluluk analizleri hesaplanmıştır. Gerçek zamanlı metin sınıflandırma ve yapay zeka çalışmalarının bu yöntem sayesinde hız kazanacağı gösterilmiştir. Gelecek çalışmalarda dağıtık tahminleme yaparken GPU kullanımı ve Spark kullanımının farkları araştırılabilir. Ayrıca şehir bazlı duygu analizi gerçek zamanlı olarak yapılarak, günlük ve haftalık duygu değişimleri ve bunun sebepleri incelenebilir. </p>
+                    
+                    <br><br>
+
+                    <div class="container">
+                        <h3>Hızlandırma Sonuçları</h3>
+                        <table class="center">
+                            <thead>
+                            <tr>
+                            <th>Partition Sayısı</th>
+                            <th>10.000 Veri</th>
+                            <th>50.000 Veri</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                            <td>1</td>
+                            <td>621</td>
+                            <td>5782</td>
+                            </tr>
+                            <tr>
+                            <td>2</td>
+                            <td>342</td>
+                            <td>2703</td>
+                            </tr>
+                            <tr>
+                            <td>4</td>
+                            <td>223</td>
+                            <td>1386</td>
+                            </tr>
+                            <tr>
+                            <td>8</td>
+                            <td>100</td>
+                            <td>701</td>
+                            </tr>
+                            <tr>
+                            <td>16</td>
+                            <td>57</td>
+                            <td>352</td>
+                            </tr>
+                            <tr>
+                            <td>32</td>
+                            <td>38</td>
+                            <td>182</td>
+                            </tr>
+                            <tr>
+                            <td>64</td>
+                            <td>35</td>
+                            <td>99</td>
+                            </tr>
+                            <tr>
+                            <td>128</td>
+                            <td>23</td>
+                            <td>58</td>
+                            </tr>
+                            <tr>
+                            <td>256</td>
+                            <td>22</td>
+                            <td>39</td>
+                            </tr>
+                            <tr>
+                            <td>512</td>
+                            <td>21</td>
+                            <td>28</td>
+                            </tr>
+                            <tr>
+                            <td>1024</td>
+                            <td>19</td>
+                            <td>24</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                            
+                        <br><br>
+                        <h3>Tüm Veri Üzerinde Hızlanma</h3>
+                        <table class="center">
+                                <thead>
+                                <tr>
+                                <th>Partition Sayısı</th>
+                                <th>Süre</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                <td>1</td>
+                                <td>1.093.560 saniye</td>
+                                </tr>
+                                <tr>
+                                <td>1024</td>
+                                <td>2282 saniye</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                                
+                    </div>
+
+                    <br><br><br>
+                    <div class="container">
+                        <h3>Duygu Analiz Sonuçları</h3>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="text-container">
+                                    <img class="img-fluid" src="images/sentiment_result.png" alt="alternative">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of cards-2 -->
+    <!-- end of results -->
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="p-small">Copyright © 2022</p>
+                </div> <!-- end of col -->
+            </div> <!-- enf of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of copyright --> 
+    <!-- end of copyright -->
+    	
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
+    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="js/morphext.min.js"></script> <!-- Morphtext rotating text in the header -->
+    <script src="js/isotope.pkgd.min.js"></script> <!-- Isotope for filter -->
+    <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+    <script src="js/scripts.js"></script> <!-- Custom scripts -->
+</body>
+</html>
